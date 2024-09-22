@@ -10,12 +10,34 @@
 
 html {
     background-color:indigo;
+    min-height: 100%;
+    overflow: hidden;
 
 }
 
 .container-photo {
     text-align: center;
     padding: 20px;
+}
+.container {
+    display: inline-block;
+    margin: auto;
+}
+.text {
+    overflow: hidden;
+    font-size: 35px;
+    font-weight: 700;
+    border-right: 0.15em solid red;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end);
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .profile-photo {
@@ -34,5 +56,7 @@ body {
     background-color: blueviolet;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Anonymous Pro", monospace;
+    cursor: url("/assets/images/remi-cursor.png"), auto;
+
 }
